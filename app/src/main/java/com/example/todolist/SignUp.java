@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SignUp extends AppCompatActivity {
     private TextView toLogin;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
