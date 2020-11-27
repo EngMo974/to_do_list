@@ -10,4 +10,9 @@
     <string name="login">Login</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="create_your_profile">Create Your Profile</string>
+    <string name="forget_your_password">Forget Your Password?</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="button">Button</string>
+    <string name="log_in">Log in</string>
+
 </resources>
