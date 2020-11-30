@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class login extends AppCompatActivity {
+public class Login extends AppCompatActivity {
     private TextView toSignUp;
 
     @Override

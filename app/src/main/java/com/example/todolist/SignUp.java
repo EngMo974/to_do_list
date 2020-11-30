@@ -3,13 +3,15 @@ package com.example.todolist;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SignUp extends AppCompatActivity {
-    private TextView toLogin;
-    
+    private TextView toLoginTxt;
+    private Button signup;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,14 +24,26 @@ public class SignUp extends AppCompatActivity {
 
         }
 
-        toLogin = (TextView) findViewById(R.id.login);
-        toLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), login.class);
-                startActivity(intent);
-            }
-        }
+        toLoginTxt = (TextView) findViewById(R.id.login);
+        signup = (Button) findViewById(R.id.signup);
+        toLoginTxt.setOnClickListener(new View.OnClickListener() {
+                                          @Override
+                                          public void onClick(View view) {
+                                              Intent intent = new Intent(getApplicationContext(), Login.class);
+                                              startActivity(intent);
+                                          }
+                                      }
+        );
+
+        signup.setOnClickListener(new View.OnClickListener() {
+                                      @Override
+                                      public void onClick(View view) {
+                                          Intent intent = new Intent(getApplicationContext(), Login.class);
+                                          startActivity(intent);
+                                      }
+                                  }
         );
     }
+
+
 }
