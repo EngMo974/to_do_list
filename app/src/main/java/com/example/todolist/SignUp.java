@@ -37,15 +37,7 @@ public class SignUp extends AppCompatActivity {
 
         }
 
-        toLoginTxt = (TextView) findViewById(R.id.login);
-        toLoginTxt.setOnClickListener(new View.OnClickListener() {
-                                          @Override
-                                          public void onClick(View view) {
-                                              Intent intent = new Intent(getApplicationContext(), Login.class);
-                                              startActivity(intent);
-                                          }
-                                      }
-        );
+
         emailid = findViewById(R.id.email);
         passwordd = findViewById(R.id.password);
         signup = (Button) findViewById(R.id.signup);
@@ -62,27 +54,35 @@ public class SignUp extends AppCompatActivity {
                                               emailid.requestFocus();
                                           } else if (email.isEmpty() && password.isEmpty()) {
                                               passwordd.setError("Please Enter Your Password");
-                                              Toast.makeText(SignUp.this, "Fields are empty", Toast.LENGTH_SHORT);
+                                              Toast.makeText(SignUp.this, "Fields are empty", Toast.LENGTH_SHORT).show();
                                           } else if (!(email.isEmpty() && password.isEmpty())) {
                                               mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(SignUp.this, new OnCompleteListener<AuthResult>() {
                                                   @Override
                                                   public void onComplete(@NonNull Task<AuthResult> task) {
                                                       if (!task.isSuccessful()) {
-                                                          Toast.makeText(SignUp.this, "Error in Sign Up Please try again", Toast.LENGTH_SHORT);
+                                                          Toast.makeText(SignUp.this, "Error in Sign Up Please try again", Toast.LENGTH_SHORT).show();
                                                       } else {
-                                                          startActivity(new Intent(SignUp.this,HomeActivity.class));
+                                                          startActivity(new Intent(SignUp.this, HomeActivity.class));
                                                       }
                                                   }
                                               });
-                                          } else  {
-                                              Toast.makeText(SignUp.this, "Error Occurred!", Toast.LENGTH_SHORT);
+                                          } else {
+                                              Toast.makeText(SignUp.this, "Error Occurred!", Toast.LENGTH_SHORT).show();
                                           }
                                       }
                                   }
 
 
         );
+        toLoginTxt =  findViewById(R.id.tologin);
+        toLoginTxt.setOnClickListener(new View.OnClickListener() {
+                                          @Override
+                                          public void onClick(View view) {
 
+                                              startActivity(new Intent(SignUp.this, Login.class));
+                                          }
+                                      }
+        );
 
     }
 

@@ -28,6 +28,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:alpha="0.19"
+        android:textColor="@color/white"
         android:autofillHints=""
         android:background="@drawable/edit_text_design"
         android:hint="@string/your_email_address"
@@ -43,6 +44,7 @@
     <EditText
         android:id="@+id/password"
         android:layout_width="300dp"
+        android:textColor="@color/white"
         android:layout_height="44dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
