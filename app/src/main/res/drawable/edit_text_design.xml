@@ -17,5 +17,5 @@
                 android:bottom="10dp" />
         </shape>
     </item>
-    <item android:drawable="@drawable/my_vector" />
+
 </layer-list>

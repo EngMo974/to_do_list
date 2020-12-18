@@ -77,9 +77,9 @@
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/my_button"
+        android:background="@drawable/mybutton"
+        android:contentDescription="@string/login"
         android:text="@string/log_in"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -87,11 +87,12 @@
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.375" />
 
+
     <TextView
         android:id="@+id/no"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Don't have an account?"
+        android:text="@string/don_t_have_an_account"
         android:textAlignment="center"
         android:textColor="#F5F5F5"
         app:layout_constraintBottom_toTopOf="@+id/create_account"
@@ -106,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="44dp"
-        android:text="Create Your Profile"
+        android:text="@string/create_your_profile"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
