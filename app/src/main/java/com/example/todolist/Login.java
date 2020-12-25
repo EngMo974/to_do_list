@@ -21,7 +21,7 @@ public class Login extends AppCompatActivity {
     private Button login;
     private EditText emailid, passwordd;
     private FirebaseAuth mAuth;
-    FirebaseAuth.AuthStateListener mAuthListener;
+
 
 
     @Override
