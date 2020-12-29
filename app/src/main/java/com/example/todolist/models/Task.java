@@ -1,70 +1,68 @@
 package com.example.todolist.models;
 
 public class Task {
-    String id;
-    String taskName;
-    String category;
-    String description;
-    boolean checked;
 
-    public Task(String id, String taskName, String category, String description, boolean checked) {
-        this.id = id;
-        this.taskName = taskName;
-        this.category = category;
-        this.description = description;
-        this.checked = checked;
-    }
-
-
-    public Task(String taskName, boolean checked, String category) {
-
-        this.taskName = taskName;
-        this.category = category;
-
-        this.checked = checked;
-    }
+    private String Id;
+    private String Title;
+    private String Date;
+    private String Description;
+    private boolean isChecked;
 
     public Task() {
     }
 
+    public Task(String title, String date, String description, boolean isChecked) {
+        Title = title;
+        Date = date;
+        Description = description;
+        this.isChecked = isChecked;
+    }
+
+    public Task(String id, String title, String date, String description, boolean isChecked) {
+        Id = id;
+        Title = title;
+        Date = date;
+        Description = description;
+        this.isChecked = isChecked;
+    }
+
     public String getId() {
-        return id;
+        return Id;
     }
 
     public void setId(String id) {
-        this.id = id;
+        Id = id;
+    }
+
+    public String getTitle() {
+        return Title;
+    }
+
+    public void setTitle(String title) {
+        Title = title;
+    }
+
+    public String getDate() {
+        return Date;
+    }
+
+    public void setDate(String date) {
+        Date = date;
     }
 
     public String getDescription() {
-        return description;
+        return Description;
     }
 
     public void setDescription(String description) {
-        this.description = description;
-    }
-
-
-    public String getTaskName() {
-        return taskName;
-    }
-
-    public void setTaskName(String taskName) {
-        this.taskName = taskName;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
+        Description = description;
     }
 
     public boolean isChecked() {
-        return checked;
+        return isChecked;
     }
 
     public void setChecked(boolean checked) {
-        this.checked = checked;
+        isChecked = checked;
     }
 }
