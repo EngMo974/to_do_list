@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/btn_back"
+            android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_baseline_arrow_back_ios_24"
@@ -35,7 +35,7 @@
             android:textSize="14sp" />
 
         <ImageButton
-            android:id="@+id/btn_search"
+            android:id="@+id/search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_baseline_search_24"
@@ -43,7 +43,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tv_listTitle"
+        android:id="@+id/listTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -56,7 +56,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linear_header" />
 
     <TextView
-        android:id="@+id/tv_delete_list"
+        android:id="@+id/delete_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="79dp"
@@ -67,7 +67,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linear_header" />
 
     <EditText
-        android:id="@+id/et_task_create"
+        android:id="@+id/create_task"
         android:layout_width="match_parent"
         android:layout_height="34dp"
         android:layout_marginHorizontal="20dp"
@@ -85,7 +85,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_listTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/listTitle" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/taskRecycler"
@@ -98,7 +98,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_task_create" />
+        app:layout_constraintTop_toBottomOf="@+id/create_task" />
 
     <ProgressBar
         android:id="@+id/pc_loading"
@@ -110,7 +110,7 @@
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_task_create" />
+        app:layout_constraintTop_toBottomOf="@+id/create_task" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
